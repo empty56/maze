@@ -6,8 +6,8 @@ using System;
 public class Timer : MonoBehaviour
 {
     float currentTime;
-    bool timerStarted;
-    public String timeText;
+    public bool timerStarted;
+    public float time;
 
     void Start() {
         currentTime = 0;
@@ -19,8 +19,6 @@ public class Timer : MonoBehaviour
         {
             currentTime += Time.deltaTime;
         }
-        TimeSpan time = TimeSpan.FromSeconds(currentTime);
-        timeText = time.ToString(@"mm\:ss\:fff");
     }
     public void StartTimer() {
         Debug.Log("Timer started");
@@ -29,7 +27,8 @@ public class Timer : MonoBehaviour
 
     public void StopTimer() {
         Debug.Log("Timer stoped");
-        Debug.Log(timeText);
+        time = currentTime;
+        currentTime = 0;
         timerStarted = false;
     }    
 }
