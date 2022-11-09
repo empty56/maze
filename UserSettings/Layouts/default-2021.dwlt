@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1680
     height: 1029.3334
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Project
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 68
+  controlID: 63
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -68,8 +68,8 @@ MonoBehaviour:
     y: 0
     width: 330.66663
     height: 979.3334
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 70
+  controlID: 48
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -411,22 +411,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/LowPolyDungeonsLite/Prefabs
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 43
   m_LastFolders:
-  - Assets/LowPolyDungeonsLite/Prefabs
+  - Assets/Scenes
   m_LastFoldersGridSize: 43
   m_LastProjectPath: C:\Users\Mefta\Desktop\UnityProjects\maze
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 1.666626}
-    m_SelectedIDs: f46c0000
-    m_LastClickedID: 27892
-    m_ExpandedIDs: 00000000806c0000826c0000846c0000866c0000ac6c000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 49.666626}
+    m_SelectedIDs: 16770000
+    m_LastClickedID: 30486
+    m_ExpandedIDs: 00000000de760000e0760000e2760000e4760000e676000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -454,7 +454,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000806c0000826c0000846c0000866c0000886c0000
+    m_ExpandedIDs: 00000000de760000e0760000e2760000e4760000e6760000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -582,9 +582,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 18fbffff
-      m_LastClickedID: -1256
-      m_ExpandedIDs: aef0ffff18fbffff
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 14fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -685,7 +685,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 25.999998}
+      snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-transform-toolbar
@@ -833,9 +833,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 17.069304, y: -0.19416244, z: 39.26306}
+    m_Target: {x: 17.550266, y: -1.7282448, z: -3.569542}
     speed: 2
-    m_Value: {x: 17.069304, y: -0.19416244, z: 39.26306}
+    m_Value: {x: 17.550266, y: -1.7282448, z: -3.569542}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -882,11 +882,11 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.11387128, y: -0.3134616, z: 0.038107347, w: -0.942483}
+    m_Target: {x: 0.04005319, y: 0.95105016, z: -0.27276787, w: 0.13965565}
     speed: 2
-    m_Value: {x: -0.11375989, y: -0.3147253, z: 0.038259916, w: -0.941564}
+    m_Value: {x: 0.039643858, y: 0.95125544, z: -0.27282673, w: 0.13822846}
   m_Size:
-    m_Target: 12.929871
+    m_Target: 10
     speed: 2
     m_Value: 12.929871
   m_Ortho:
