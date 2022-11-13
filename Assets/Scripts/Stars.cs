@@ -15,6 +15,7 @@ public class Stars : MonoBehaviour
     public Sprite oneStarSprite;
     public Sprite twoStarsSprite;
     public Sprite threeStarsSprite;
+    public GameObject player;
 
     private int GetStars(int level, float time) {
         int stars = 0;
@@ -35,11 +36,11 @@ public class Stars : MonoBehaviour
         }
         else if(level == 2)
         {
-            if(time > 120)
+            if(time > 400)
             {
                 stars = 1;
             }
-            else if(time < 60)
+            else if(time < 180)
             {
                 stars = 3;
             }
@@ -71,6 +72,7 @@ public class Stars : MonoBehaviour
         endPanel.SetActive(!endPanel.activeSelf);
         TimeSpan timeSpan = TimeSpan.FromSeconds(time);
         textMesh.text = "Congratulations, you've finished the level in " + timeSpan.ToString("mm':'ss':'ff") + "!\nHere is your rating:";
+        player.SetActive(false);
     }   
 
     public void BackToMainMenu() {

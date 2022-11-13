@@ -134,6 +134,7 @@ namespace StarterAssets
 
         private void Start()
         {
+            AudioListener.volume = PlayerPrefs.GetFloat("volume");
             _cinemachineTargetYaw = CinemachineCameraTarget.transform.rotation.eulerAngles.y;
             
             _hasAnimator = TryGetComponent(out _animator);
