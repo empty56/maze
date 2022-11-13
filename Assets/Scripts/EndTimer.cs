@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.SceneManagement;
 
 public class EndTimer : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class EndTimer : MonoBehaviour
             timer.StopTimer();
             TimeSpan time = TimeSpan.FromSeconds(timer.time);
             Debug.Log(time.ToString(@"mm\:ss\:fff"));
-            stars.UpdateBestTime(timer.time, 1);
+            stars.UpdateBestTime(timer.time, SceneManager.GetActiveScene().buildIndex);
         }
     }
 }
