@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -37363,7 +37363,6 @@ Transform:
   - {fileID: 382311645}
   - {fileID: 1940132390}
   - {fileID: 956640816}
-  - {fileID: 2061198979}
   - {fileID: 1466768883}
   - {fileID: 980965313}
   - {fileID: 276839754}
@@ -39082,84 +39081,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 472742, guid: 558c8282b60471344bb6abd6cd7d800c, type: 3}
   m_PrefabInstance: {fileID: 2060550741}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &2061198978
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1928291011}
-    m_Modifications:
-    - target: {fileID: 113480, guid: 558c8282b60471344bb6abd6cd7d800c, type: 3}
-      propertyPath: m_Name
-      value: Wall (415)
-      objectReference: {fileID: 0}
-    - target: {fileID: 472742, guid: 558c8282b60471344bb6abd6cd7d800c, type: 3}
-      propertyPath: m_RootOrder
-      value: 414
-      objectReference: {fileID: 0}
-    - target: {fileID: 472742, guid: 558c8282b60471344bb6abd6cd7d800c, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 4.1666
-      objectReference: {fileID: 0}
-    - target: {fileID: 472742, guid: 558c8282b60471344bb6abd6cd7d800c, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 4.1666
-      objectReference: {fileID: 0}
-    - target: {fileID: 472742, guid: 558c8282b60471344bb6abd6cd7d800c, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2.0833
-      objectReference: {fileID: 0}
-    - target: {fileID: 472742, guid: 558c8282b60471344bb6abd6cd7d800c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -12.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 472742, guid: 558c8282b60471344bb6abd6cd7d800c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 472742, guid: 558c8282b60471344bb6abd6cd7d800c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 37.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 472742, guid: 558c8282b60471344bb6abd6cd7d800c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 472742, guid: 558c8282b60471344bb6abd6cd7d800c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 472742, guid: 558c8282b60471344bb6abd6cd7d800c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 472742, guid: 558c8282b60471344bb6abd6cd7d800c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 472742, guid: 558c8282b60471344bb6abd6cd7d800c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 472742, guid: 558c8282b60471344bb6abd6cd7d800c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 472742, guid: 558c8282b60471344bb6abd6cd7d800c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 472742, guid: 558c8282b60471344bb6abd6cd7d800c, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 558c8282b60471344bb6abd6cd7d800c, type: 3}
---- !u!4 &2061198979 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 472742, guid: 558c8282b60471344bb6abd6cd7d800c, type: 3}
-  m_PrefabInstance: {fileID: 2061198978}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2063818639
 PrefabInstance:
