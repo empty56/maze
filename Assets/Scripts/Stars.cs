@@ -1,25 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Stars : MonoBehaviour
 {
-    public float bestTime;
-    public int stars;
-    
-    void Start() {
-        bestTime = 0;
-        stars = 0;
-    }
 
-    private void UpdateStars(int level) {
+    public TextMeshProUGUI textMesh;
+    public GameObject endPanel;
+    public Image starsImage;
+    public Sprite oneStarSprite;
+    public Sprite twoStarsSprite;
+    public Sprite threeStarsSprite;
+
+    private int GetStars(int level, float time) {
+        int stars = 0;
         if(level == 1)
         {
-            if(bestTime > 90)
+            if(time > 90)
             {
                 stars = 1;
             }
-            else if(bestTime < 40)
+            else if(time < 40)
             {
                 stars = 3;
             }
@@ -30,11 +34,11 @@ public class Stars : MonoBehaviour
         }
         else if(level == 2)
         {
-            if(bestTime > 120)
+            if(time > 120)
             {
                 stars = 1;
             }
-            else if(bestTime < 60)
+            else if(time < 60)
             {
                 stars = 3;
             }
@@ -42,15 +46,35 @@ public class Stars : MonoBehaviour
                 stars = 2;
             }
         }
+        return stars;
     }
 
-    public void UpdateBestTime(float newBestTIme, int level) {
-        if(newBestTIme < bestTime || bestTime == 0)
-        {
-            bestTime = newBestTIme;
-            Debug.Log("Best time updated: " + bestTime);
-            UpdateStars(level);
+    public void UpdateBestTime(float time, int level) {
+        int stars = GetStars(level, time);
+        
+        if (stars == 1) {
+            starsImage.sprite = oneStarSprite;
+        } else if (stars == 2) {
+            starsImage.sprite = twoStarsSprite;
+        } else {
+            starsImage.sprite = threeStarsSprite;
         }
+
+        if(!PlayerPrefs.HasKey("bestTime") || time < PlayerPrefs.GetFloat("bestTime" + level.ToString()))
+        {
+            PlayerPrefs.SetFloat("bestTime" + level.ToString(), time);
+            Debug.Log("Best time updated: " + time);
+            PlayerPrefs.SetInt("bestStars" + level.ToString(), stars);
+        }
+
+        endPanel.SetActive(!endPanel.activeSelf);
+        textMesh.text = "Congratulations, you've finished the level in " + time.ToString("F2") + " seconds!\nHere is your rating:";
+        // GameObject levelEndMenu = GameObject.FindGameObjectWithTag("Finish");
+        // levelEndMenu.SetActive(true);
     }   
+
+    public void BackToMainMenu() {
+        SceneManager.LoadScene(0);
+    }
     
 }
