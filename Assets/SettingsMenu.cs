@@ -8,11 +8,15 @@ using TMPro;
 public class SettingsMenu : MonoBehaviour
 {
     public Slider slider;
+    public Toggle timerToggle;
     Resolution[] resolutions;
     public TMP_Dropdown resolutionDropdown;
 
     void Start() {
         slider.value = PlayerPrefs.GetFloat("volume");
+        int showTime = PlayerPrefs.GetInt("showTime");
+        Debug.Log("setting: " + showTime.ToString());
+        timerToggle.isOn = showTime == 1 ? true : false;
         resolutions = Screen.resolutions;
         resolutionDropdown.ClearOptions();
         List<string> options = new List<string>();
@@ -43,5 +47,9 @@ public class SettingsMenu : MonoBehaviour
 
     public void SetFullscreen(bool isFullscreen) {
         Screen.fullScreen = isFullscreen;
+    }
+
+    public void SetShowTimer(bool isShown) {
+        PlayerPrefs.SetInt("showTime", (isShown ? 1 : 0));
     }
 }
