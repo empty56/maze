@@ -70,6 +70,7 @@ public class Stars : MonoBehaviour
         }
 
         endPanel.SetActive(!endPanel.activeSelf);
+        Cursor.visible = true; 
         TimeSpan timeSpan = TimeSpan.FromSeconds(time);
         textMesh.text = "Congratulations, you've finished the level in " + timeSpan.ToString("mm':'ss':'ff") + "!\nHere is your rating:";
         player.SetActive(false);

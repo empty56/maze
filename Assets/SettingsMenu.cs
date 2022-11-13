@@ -45,6 +45,7 @@ public class SettingsMenu : MonoBehaviour
 
     public void SetVolume(float volume) {
         PlayerPrefs.SetFloat("volume", volume);
+        AudioListener.volume = volume;
     }
 
     public void SetFullscreen(bool isFullscreen) {
