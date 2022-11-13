@@ -47,9 +47,11 @@ public class LevelsMenu : MonoBehaviour
 
     public void StartLevel1() {
         SceneManager.LoadScene("Level_1");
+        Time.timeScale = 1f;
     }
 
     public void StartLevel2() {
         SceneManager.LoadScene("Level_2");
+        Time.timeScale = 1f;
     }
 }

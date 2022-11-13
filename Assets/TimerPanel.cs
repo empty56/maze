@@ -10,6 +10,8 @@ public class TimerPanel : MonoBehaviour
         int showTime = PlayerPrefs.GetInt("showTime");
         if (showTime == 0) {
             timerPanel.SetActive(false);
+        } else if (showTime == 1) {
+            timerPanel.SetActive(true);
         }
     }
 }
