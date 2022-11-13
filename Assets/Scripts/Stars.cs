@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 using UnityEngine.SceneManagement;
 
 public class Stars : MonoBehaviour
@@ -68,7 +69,8 @@ public class Stars : MonoBehaviour
         }
 
         endPanel.SetActive(!endPanel.activeSelf);
-        textMesh.text = "Congratulations, you've finished the level in " + time.ToString("F2") + " seconds!\nHere is your rating:";
+        TimeSpan timeSpan = TimeSpan.FromSeconds(time);
+        textMesh.text = "Congratulations, you've finished the level in " + timeSpan.ToString("mm':'ss':'ff") + "!\nHere is your rating:";
     }   
 
     public void BackToMainMenu() {

@@ -5,6 +5,7 @@ using UnityEngine;
 public class StartTimer : MonoBehaviour
 {
     public Timer timer;
+    
     private void OnTriggerEnter(Collider other) {
         if(timer.timerStarted == false)
         {
