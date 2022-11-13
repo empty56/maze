@@ -4,18 +4,10 @@ using UnityEngine;
 
 public class StartMenu : MonoBehaviour
 {
-    // // Start is called before the first frame update
-    // void Start()
-    // {
-        
-    // }
-
-    // // Update is called once per frame
-    // void Update()
-    // {
-        
-    // }
-
+    void Start() {
+        int isFullscreen = PlayerPrefs.GetInt("isFullscreen");
+        Screen.fullScreen = isFullscreen == 1 ? true : false;
+    }
     public void QuitGame() {
         Application.Quit();
     }
