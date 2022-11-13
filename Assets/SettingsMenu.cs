@@ -18,13 +18,13 @@ public class SettingsMenu : MonoBehaviour
         List<string> options = new List<string>();
 
         int currentResolutionIndex = 0;
-        for (int i = 0; i < resolutions.Length; i++) {
+        for (int i = resolutions.Length - 1; i >= 0; i--) {
             string option = resolutions[i].width + "x" + resolutions[i].height + "@" + resolutions[i].refreshRate + "Hz";
             options.Add(option);
 
             if (resolutions[i].width == Screen.currentResolution.width && resolutions[i].height == Screen.currentResolution.height
              && resolutions[i].refreshRate == Screen.currentResolution.refreshRate) {
-                currentResolutionIndex = i;
+                currentResolutionIndex = resolutions.Length - 1 - i;
             }
         }
         resolutionDropdown.AddOptions(options);
@@ -33,11 +33,15 @@ public class SettingsMenu : MonoBehaviour
     }
 
     public void SetResolution(int resolutionIndex) {
-        Resolution resolution = resolutions[resolutionIndex];
-        Screen.SetResolution(resolution.width, resolution.height, true, resolution.refreshRate);
+        Resolution resolution = resolutions[resolutions.Length - 1 - resolutionIndex];
+        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen, resolution.refreshRate);
     }
 
     public void SetVolume(float volume) {
         PlayerPrefs.SetFloat("volume", volume);
+    }
+
+    public void SetFullscreen(bool isFullscreen) {
+        Screen.fullScreen = isFullscreen;
     }
 }
