@@ -19,6 +19,10 @@ public class PauseMenu : MonoBehaviour
                 Pause();
             }
         }
+        if (GameIsPaused) {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true; 
+        }
     }
 
     public void Resume() {
@@ -42,6 +46,7 @@ public class PauseMenu : MonoBehaviour
     public void RestartLevel() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1f;
+        GameIsPaused = false;
         Cursor.visible = false; 
     }
 }
