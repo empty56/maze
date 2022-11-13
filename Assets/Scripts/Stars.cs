@@ -60,7 +60,7 @@ public class Stars : MonoBehaviour
             starsImage.sprite = threeStarsSprite;
         }
 
-        if(!PlayerPrefs.HasKey("bestTime") || time < PlayerPrefs.GetFloat("bestTime" + level.ToString()))
+        if(!PlayerPrefs.HasKey("bestTime" + level.ToString()) || time < PlayerPrefs.GetFloat("bestTime" + level.ToString()))
         {
             PlayerPrefs.SetFloat("bestTime" + level.ToString(), time);
             Debug.Log("Best time updated: " + time);
@@ -69,8 +69,6 @@ public class Stars : MonoBehaviour
 
         endPanel.SetActive(!endPanel.activeSelf);
         textMesh.text = "Congratulations, you've finished the level in " + time.ToString("F2") + " seconds!\nHere is your rating:";
-        // GameObject levelEndMenu = GameObject.FindGameObjectWithTag("Finish");
-        // levelEndMenu.SetActive(true);
     }   
 
     public void BackToMainMenu() {

@@ -6,6 +6,9 @@ public class StartTimer : MonoBehaviour
 {
     public Timer timer;
     private void OnTriggerEnter(Collider other) {
-       timer.StartTimer();
+        if(timer.timerStarted == false)
+        {
+            timer.StartTimer();
+        }
     }
 }
