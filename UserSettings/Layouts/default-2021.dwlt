@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 67
+  controlID: 133
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 68
+  controlID: 123
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 69
+  controlID: 124
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -494,22 +494,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/ANGRY MESH/Snowman/Prefabs
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/ANGRY MESH/Snowman/Prefabs
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\User\Desktop\KPI\4_course\Graphics\unity\coursework\maze
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 47}
-    m_SelectedIDs: 203a0500
-    m_LastClickedID: 342560
-    m_ExpandedIDs: 00000000626d0000646d0000666d0000686d0000046c0100143a05001c3a050000ca9a3b
+    m_SelectedIDs: 2ca00000
+    m_LastClickedID: 41004
+    m_ExpandedIDs: 0000000008a000000aa000000ca000000ea0000010a0000018a0000042a0000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -537,7 +537,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000626d0000646d0000666d0000686d0000
+    m_ExpandedIDs: 0000000008a000000aa000000ca000000ea0000010a00000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -664,10 +664,10 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 581}
-      m_SelectedIDs: f07ffdff
-      m_LastClickedID: -163856
-      m_ExpandedIDs: 96b9fdff1ac1fdff16d0fdff10e3fdff780ffeff1817feff2017feff2417feff2817feff2c17feff2e17feff3017feff3217feff3817feff3c17feff3e17feff0e27feff1627feff1827feff1c27feff2027feff2427feff2627feff2827feff2e27feff3027feff3427feff4a2ffeff4c2ffeff522ffeff562ffeff5c2ffeff642ffeff662ffeff682ffeff6a2ffeff702ffeff0c30feff9a34feff0859feff5e59feff605afeff8a70feff7680feff2e85feff606affff18fbffffb8bc020088bd02005c13050020160500fc1b0500ac2c0500
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 0895ffff6a96ffff18a7ffff94aaffff0abbffffacbeffff34c0ffffc0d2ffff64d8ffffd4e9ffff18fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -916,9 +916,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 5.9701796, y: -45.725304, z: 12.004278}
+    m_Target: {x: -272.26038, y: -305.83044, z: 88.06594}
     speed: 2
-    m_Value: {x: 5.9701796, y: -45.725304, z: 12.004278}
+    m_Value: {x: -272.26038, y: -305.83044, z: 88.06594}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -965,13 +965,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.42486808, y: 0.5289816, z: -0.34339216, w: 0.64969236}
+    m_Target: {x: -0.29095745, y: 0.5679756, z: -0.22766219, w: -0.7357741}
     speed: 2
-    m_Value: {x: 0.42479312, y: 0.5288883, z: -0.34333158, w: 0.64957774}
+    m_Value: {x: -0.29089257, y: 0.5678489, z: -0.22761142, w: -0.73561}
   m_Size:
-    m_Target: 29.025927
+    m_Target: 225.89133
     speed: 2
-    m_Value: 29.025927
+    m_Value: 225.89133
   m_Ortho:
     m_Target: 0
     speed: 2
