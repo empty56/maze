@@ -11,7 +11,9 @@ public class LevelsMenu : MonoBehaviour
     public TextMeshProUGUI level1score;
     public Image level1stars;
     public TextMeshProUGUI level2score;
+    public TextMeshProUGUI level3score;
     public Image level2stars;
+    public Image level3stars;
     public Sprite oneStarSprite;
     public Sprite twoStarsSprite;
     public Sprite threeStarsSprite;
@@ -43,6 +45,19 @@ public class LevelsMenu : MonoBehaviour
                 level2stars.sprite = threeStarsSprite;
             }
         }
+        if (PlayerPrefs.HasKey("bestTime3") && PlayerPrefs.HasKey("bestStars3")) {
+            float bestTime3 = PlayerPrefs.GetFloat("bestTime3");
+            float bestStars3 = PlayerPrefs.GetInt("bestStars3");
+            TimeSpan timeSpan3 = TimeSpan.FromSeconds(bestTime3);
+            level3score.text = "HIGH SCORE: " + timeSpan3.ToString("mm':'ss':'ff");
+            if (bestStars3 == 1) {
+                level3stars.sprite = oneStarSprite;
+            } else if (bestStars3 == 2) {
+                level3stars.sprite = twoStarsSprite;
+            } else {
+                level3stars.sprite = threeStarsSprite;
+            }
+        }
 	}
 
     public void StartLevel1() {
@@ -52,6 +67,11 @@ public class LevelsMenu : MonoBehaviour
 
     public void StartLevel2() {
         SceneManager.LoadScene("Level_2");
+        Time.timeScale = 1f;
+    }
+
+    public void StartLevel3() {
+        SceneManager.LoadScene("Level_3");
         Time.timeScale = 1f;
     }
 }

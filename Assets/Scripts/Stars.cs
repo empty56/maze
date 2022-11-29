@@ -48,6 +48,20 @@ public class Stars : MonoBehaviour
                 stars = 2;
             }
         }
+        else if(level == 3)
+        {
+            if(time > 150)
+            {
+                stars = 1;
+            }
+            else if(time < 100)
+            {
+                stars = 3;
+            }
+            else{
+                stars = 2;
+            }
+        }
         return stars;
     }
 
