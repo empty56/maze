@@ -5464,9 +5464,9 @@ MonoBehaviour:
   level1score: {fileID: 149351035}
   level1stars: {fileID: 1697991131}
   level2score: {fileID: 1920772956}
-  level3score: {fileID: 0}
+  level3score: {fileID: 155289706}
   level2stars: {fileID: 1265927851}
-  level3stars: {fileID: 0}
+  level3stars: {fileID: 1795544451}
   oneStarSprite: {fileID: 21300000, guid: 81f62d1105db86844a8ebe7f0cf75672, type: 3}
   twoStarsSprite: {fileID: 21300000, guid: b023db33fd9baa642a055861b14e3545, type: 3}
   threeStarsSprite: {fileID: 21300000, guid: 71e15e0683b709340b74f8fa8307b627, type: 3}
