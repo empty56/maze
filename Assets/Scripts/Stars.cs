@@ -32,7 +32,6 @@ public class Stars : MonoBehaviour
             else{
                 stars = 2;
             }
-            Debug.Log("Start updated: " + stars);
         }
         else if(level == 2)
         {
